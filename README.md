@@ -2,7 +2,7 @@
 
 A policy probe for the Bitcoin network. RawRelay queries DNS seeders for live node IPs and pushes raw transactions directly over TCP, bypassing standard relay rules entirely. No node, no private mempool service, no middlemen — a tool for mapping which nodes will accept your specific non-standard transactions.
 
-Named as an homage to [phone phreakers](https://en.wikipedia.org/wiki/Phone_phreaking) — 2600 Hz was the tone used to seize AT&T trunk lines. This tool does the same thing to the Bitcoin network: direct-dials nodes instead of routing through intermediaries.
+Named in homage to [phone phreakers](https://en.wikipedia.org/wiki/Phone_phreaking) — 2600 Hz was the tone used to seize AT&T trunk lines. This tool does the same thing to the Bitcoin network: direct-dials nodes instead of routing through intermediaries.
 
 ## What it does
 
@@ -12,7 +12,7 @@ Before this tool, getting a non-standard transaction into miner mempools require
 
 RawRelay takes the Bitcoin-native approach: query the public DNS seeders for live node IPs, open direct TCP connections to port 8333, perform a bare `version`/`verack` handshake, and push your raw transaction hex straight to each peer's mempool — no node required on your end.
 
-Originally built as part of a broader "nodeless" and policy-sniffing infrastructure. Re-released during sub-1-sat/vB summer (2024) as a tool for probing mempool policy variations across the network.
+Originally built as part of a broader nodeless and policy-sniffing infrastructure. Re-released during sub-1-sat/vB summer (2024) as a tool for probing mempool policy variations across the network.
 
 ## On-chain provenance
 
