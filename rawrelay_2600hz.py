@@ -14,7 +14,7 @@ MAGIC_MAIN = b'\xf9\xbe\xb4\xd9'
 peer_status = {}
 
 window = tk.Tk()
-window.title("RawQelay - Non-Standard TX Injector - Broadcast 2600")
+window.title("RawRelay - Non-Standard TX Injector - Broadcast 2600")
 window.geometry("1000x720")
 
 ipv4_enabled = tk.BooleanVar(value=True)
